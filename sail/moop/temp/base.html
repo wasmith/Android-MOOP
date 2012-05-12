@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	{% block headext %}
+	
+	{% endblock %}
+<title>{% block title %}MOOP Control System{% endblock %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+<link rel="stylesheet" type="text/css" href="/static/base.css" /> 
+<link rel="shortcut icon" href="/static/media/favicon.ico" />
+</head>
+{% block bodytag %}
+<body>
+{%  endblock %}
+		<div id='nav'>
+			{% block navbar %}
+				
+			{% endblock %}
+		</div>
+
+		<div id='main_content'>
+			{% block maincontent %}
+
+			{% endblock %}
+		</div>
+
+		<div id='sticky'>
+			<div id='footer'>
+				{% block footer %}
+						<div class='footeritem'>
+
+						</div>
+				{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>

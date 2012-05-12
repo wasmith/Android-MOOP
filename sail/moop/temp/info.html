@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block headext %}
+	<script type="text/JavaScript">
+	function timedRefresh() 
+	{
+		setTimeout("location.reload(true);",2000);
+	}
+	</script>
+{% endblock %}
+{% block bodytag %}
+	<body onload=timedRefresh();>
+{% endblock %}
+{% block maincontent %}
+<center><h1>Moop Stats</h1></center>
+<p />
+Wind:	{{ wind }}
+<p />
+Location (Lat): {{ location.0 }}
+<br />
+Location (Lon): {{ location.1 }}
+<p />
+Battery Percentage: {{ batt }}
+<p />
+Orientation (x): {{ accl.0 }}
+<br />
+Orientation (y): {{ accl.1 }}
+<br />
+Orientation (z): {{ accl.2 }}
+<br />
+
+
+{%  endblock %}

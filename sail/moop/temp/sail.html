@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+<center><h1>Moop Sailing</h1></center>
+<p />
+<form action="/" method="POST" id="signup_form">
+Server Address:	{{ moop.server }} {{ moop.server.errors }}
+<p />
+Server Port:	{{ moop.port }} {{ moop.port.errors }}
+<p />
+Sail Angle: {{ moop.sail }} {{ moop.sail.errors }}
+<p />
+<center><input type="submit" value="Submit" id="submit_button"/></center>
+
+
+
+{%  endblock %}
